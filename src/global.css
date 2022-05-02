@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* exemplo criação classe css com tailwind 
+.button {
+  @apply bg-violet-500 px-4 h-10 rounded text-violet-100;
+} */
