@@ -41,7 +41,7 @@
 
 - [Phosphor Icons](https://phosphoricons.com/) - [Github](https://github.com/phosphor-icons/phosphor-home)
 
-- [headless UI](https://headlessui.dev/)
+- [Headless UI](https://headlessui.dev/)
 
 ## Break:
 
