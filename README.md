@@ -37,6 +37,12 @@
 
         importar o arquivo global.css no main.tsx
 
+## Links úteis
+
+- [Phosphor Icons](https://phosphoricons.com/) - [Github](https://github.com/phosphor-icons/phosphor-home)
+
+- [headless UI](https://headlessui.dev/)
+
 ## Break:
 
 aula 1: 1:18:00
