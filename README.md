@@ -1,8 +1,15 @@
-# Feedback Widget - Front-End WEB
+# 🚀 Feedback Widget - Front-End WEB 🚀
 
 > Projeto criado durante o evento NLW Return da RocketSeat
 
-## Guia
+## 👨‍💻 Tecnologias utilizadas 👩‍💻
+
+- Javascript / Typescript : Linguagem programação
+- Vite : Ferramenta de criação de Front-end
+- React : Biblioteca criação de interfaces
+- Tailwind CSS : Framework css
+
+## 🗃️ Guia 📚
 
 - Criando o projeto com Vite:
 
