@@ -44,7 +44,13 @@
         Ele adiciona os atributos aria aos componentes HTML e a funcionalidade de abrir e fechar
         Link para documentação do Popover: https://headlessui.dev/react/popover
 
-## Links úteis
+## 🖼️ Imagens do projeto 👀
+
+em breve
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/nlw-return-web-01.png" alt="NLW Return Img1" width="450"/>
+
+## 🔗 Links úteis ✨
 
 - [Phosphor Icons](https://phosphoricons.com/) | [Phosphor Icons Github](https://github.com/phosphor-icons/phosphor-home) : Família de ícones flexível para interfaces, diagramas, apresentações — o que for, na verdade.
 
@@ -53,3 +59,13 @@
 - [AriaKit | Reakit](https://reakit.io/) : Crie aplicativos web ricos e acessíveis com React.
 
 - [Radix UI](https://www.radix-ui.com/) : Componentes acessíveis e sem estilo para criar sistemas de design e aplicativos da Web de alta qualidade no React.
+
+## 🔥 Repositórios da NLW Return 🫶
+
+[Front-End WEB](https://github.com/rodolfoHOk/rocketseat.feedback-widget-web)
+
+[Back-End]() - em breve
+
+[Mobile]() - em breve
+
+[Design no Figma](https://www.figma.com/community/file/1102912516166573468/Feedback-Widget)
