@@ -21,7 +21,7 @@
 
         yarn install or npm install
 
-- Configurando o tailwind CSS
+- Configurando o tailwind CSS (tailwindcss postcss autoprefixer)
 
         yarn add -D tailwindcss postcss autoprefixer
 
@@ -38,17 +38,41 @@
 
         importar o arquivo global.css no main.tsx
 
-- Popover do Headless UI informações
+- Phosphor Icons (phosphor-react)
+
+        Biblioteca de ícones
+
+- Popover do Headless UI (@headlessui/react)
 
         Utilizamos para fornecer acessibilidade ao componente Widget ao abrir e fechar
         Ele adiciona os atributos aria aos componentes HTML e a funcionalidade de abrir e fechar
         Link para documentação do Popover: https://headlessui.dev/react/popover
 
+- Tailwind CSS Forms (@tailwindcss/forms)
+
+        Plugin do Tailwind de estilização de formulários
+
+- Tailwind Scrollbar (tailwind-scrollbar)
+
+        Plugin para adicionar ao Tailwind estilização do scrollbar
+
+- HTML 2 Canvas (html2canvas)
+
+        Biblioteca que utilizamos para tirar screenshot da página do browser
+
 ## 🖼️ Imagens do projeto 👀
 
-em breve
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-01.png" alt="NLW Return Img1" width="450"/>
 
-<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/nlw-return-web-01.png" alt="NLW Return Img1" width="450"/>
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-02.png" alt="NLW Return Img2" width="450"/>
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-03.png" alt="NLW Return Img3" width="450"/>
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-04.png" alt="NLW Return Img4" width="450"/>
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-05.png" alt="NLW Return Img5" width="450"/>
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-06.png" alt="NLW Return Img6" width="450"/>
 
 ## 🔗 Links úteis ✨
 
@@ -62,10 +86,10 @@ em breve
 
 ## 🔥 Repositórios da NLW Return 🫶
 
-[Front-End WEB](https://github.com/rodolfoHOk/rocketseat.feedback-widget-web)
+- [Front-End WEB](https://github.com/rodolfoHOk/rocketseat.feedback-widget-web)
 
-[Back-End]() - em breve
+- [Back-End]() - em breve
 
-[Mobile]() - em breve
+- [Mobile]() - em breve
 
-[Design no Figma](https://www.figma.com/community/file/1102912516166573468/Feedback-Widget)
+- [Design no Figma](https://www.figma.com/community/file/1102912516166573468/Feedback-Widget)
