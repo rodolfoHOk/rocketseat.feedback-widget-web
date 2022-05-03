@@ -2,12 +2,13 @@
 
 > Projeto criado durante o evento NLW Return da RocketSeat
 
-## 👨‍💻 Tecnologias utilizadas 👩‍💻
+## 👨‍💻 Tecnologias e bibliotecas utilizadas 👩‍💻
 
 - Javascript / Typescript : Linguagem programação
 - Vite : Ferramenta de criação de Front-end
 - React : Biblioteca criação de interfaces
 - Tailwind CSS : Framework css
+- Headless UI : Componentes de UI sem estilos e completamente acessíveis (acessibilidade)
 
 ## 🗃️ Guia 📚
 
@@ -37,12 +38,18 @@
 
         importar o arquivo global.css no main.tsx
 
+- Popover do Headless UI informações
+
+        Utilizamos para fornecer acessibilidade ao componente Widget ao abrir e fechar
+        Ele adiciona os atributos aria aos componentes HTML e a funcionalidade de abrir e fechar
+        Link para documentação do Popover: https://headlessui.dev/react/popover
+
 ## Links úteis
 
-- [Phosphor Icons](https://phosphoricons.com/) - [Github](https://github.com/phosphor-icons/phosphor-home)
+- [Phosphor Icons](https://phosphoricons.com/) | [Phosphor Icons Github](https://github.com/phosphor-icons/phosphor-home) : Família de ícones flexível para interfaces, diagramas, apresentações — o que for, na verdade.
 
-- [Headless UI](https://headlessui.dev/)
+- [Headless UI](https://headlessui.dev/) : Componentes de interface do usuário totalmente sem estilo e totalmente acessíveis, projetados para se integrar perfeitamente ao Tailwind CSS.
 
-## Break:
+- [AriaKit | Reakit](https://reakit.io/) : Crie aplicativos web ricos e acessíveis com React.
 
-aula 1: 1:18:00
+- [Radix UI](https://www.radix-ui.com/) : Componentes acessíveis e sem estilo para criar sistemas de design e aplicativos da Web de alta qualidade no React.
