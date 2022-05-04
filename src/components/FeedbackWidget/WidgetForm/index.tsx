@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import bugImageUrl from '../../assets/bug.svg';
-import ideaImageUrl from '../../assets/idea.svg';
-import thoughtImageUrl from '../../assets/thought.svg';
+import bugImageUrl from '../../../assets/bug.svg';
+import ideaImageUrl from '../../../assets/idea.svg';
+import thoughtImageUrl from '../../../assets/thought.svg';
 import { FeedbackTypeStep } from './Steps/FeedbackTypeStep';
 import { FeedbackContentStep } from './Steps/FeedbackContentStep';
 import { FeedbackSuccessStep } from './Steps/FeedbackSuccessStep';
@@ -42,7 +42,7 @@ export function WidgetForm() {
   }
 
   return (
-    <div className="bg-zinc-900 p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto">
+    <div className="bg-white dark:bg-zinc-900 p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto">
       {feedbackSent ? (
         <FeedbackSuccessStep
           onFeedbackRestartRequested={handleRestartFeedBack}
@@ -61,7 +61,7 @@ export function WidgetForm() {
         </>
       )}
 
-      <footer className="text-xs text-neutral-400">
+      <footer className="text-xs text-zinc-500 dark:text-zinc-400">
         <span>
           Feito com ♥ pela{' '}
           <a

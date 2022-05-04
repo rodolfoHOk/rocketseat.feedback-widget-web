@@ -10,6 +10,11 @@
 - Tailwind CSS : Framework css
 - Headless UI : Componentes de UI sem estilos e completamente acessíveis (acessibilidade)
 
+## ➕ O que fiz além ✨
+
+- Tema Light (Claro) seguindo o layout do Figma
+- Componente Header com botões para mudar o tema light (claro) ou dark (escuro)
+
 ## 🗃️ Guia 📚
 
 - Criando o projeto com Vite:
@@ -60,19 +65,68 @@
 
         Biblioteca que utilizamos para tirar screenshot da página do browser
 
+- Usar font Inter do Google fonts
+
+        no arquivo global.css adicionar no começo:
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lato:ital,wght@0,400;0,700;1,400&family=Rubik+Beastly&display=swap');
+        e adicionar ao body @apply font-Inter
+
+        no arquivo tailwind.config.js adicionar no theme.extend:
+        fontFamily: { Inter: ['Inter'], },
+
+- Usar dark mode manual com Tailwind CSS
+
+        no arquivo tailwind.config.js adicionar no module.exports:
+        darkMode: 'class',
+
+        na tag html precisa adicionar a classe dark exemplo:
+        modo dark: <html lang="en" class="dark">...</html>
+        modo light: <html lang="en">...</html>
+
+        nas estilizações adicionar a variante dark exemplo:
+        <div class="bg-white dark:bg-zinc-900">...</div>
+
 ## 🖼️ Imagens do projeto 👀
+
+Feedback Widget fechado:
 
 <img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-01.png" alt="NLW Return Img1" width="450"/>
 
+Feedback Widget com mouse em cima:
+
 <img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-02.png" alt="NLW Return Img2" width="450"/>
+
+Feedback Widget aberto:
 
 <img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-03.png" alt="NLW Return Img3" width="450"/>
 
+Feedback Widget ao selecionar Problema:
+
 <img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-04.png" alt="NLW Return Img4" width="450"/>
+
+Feedback Widget Problema com screenshot tirada e com mensagem:
 
 <img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-05.png" alt="NLW Return Img5" width="450"/>
 
+Feedback Widget ao enviar Feedback:
+
 <img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-06.png" alt="NLW Return Img6" width="450"/>
+
+Feedback Widget com cabeçalho com botões para selecionar tema:
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-07.png" alt="NLW Return Img7" width="450"/>
+
+Feedback Widget com tema claro:
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-08.png" alt="NLW Return Img8" width="450"/>
+
+Feedback Widget com tema claro e Ideia selecionada:
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-09.png" alt="NLW Return Img9" width="450"/>
+
+Feedback Widget com tema claro ao enviar Feedback:
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-10.png" alt="NLW Return Img10" width="450"/>
 
 ## 🔗 Links úteis ✨
 

@@ -1,12 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lato:ital,wght@0,400;0,700;1,400&family=Rubik+Beastly&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* exemplo criação classe css com tailwind 
-.button {
-  @apply bg-violet-500 px-4 h-10 rounded text-violet-100;
-} */
-
 body {
-  @apply bg-[#09090A] text-zinc-100;
+  @apply bg-white dark:bg-[#09090A] text-zinc-800 dark:text-zinc-100 font-Inter;
 }
