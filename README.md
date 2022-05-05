@@ -142,8 +142,8 @@ Feedback Widget com tema claro ao enviar Feedback:
 
 - [Front-End WEB](https://github.com/rodolfoHOk/rocketseat.feedback-widget-web)
 
-- [Back-End]() - em breve
+- [Back-End](https://github.com/rodolfoHOk/rocketseat.feedback-widget-server)
 
-- [Mobile]() - em breve
+- [Mobile](https://github.com/rodolfoHOk/rocketseat.feedback-widget-mobile)
 
 - [Design no Figma](https://www.figma.com/community/file/1102912516166573468/Feedback-Widget)
