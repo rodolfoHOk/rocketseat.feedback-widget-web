@@ -138,6 +138,10 @@ Feedback Widget com tema claro ao enviar Feedback:
 
 - [Radix UI](https://www.radix-ui.com/) : Componentes acessíveis e sem estilo para criar sistemas de design e aplicativos da Web de alta qualidade no React.
 
+## 🚀 Deploy 🔥
+
+- Front-End WEB Vercel: https://rocketseat-feedback-widget-web.vercel.app/
+
 ## 🔥 Repositórios da NLW Return 🫶
 
 - [Front-End WEB](https://github.com/rodolfoHOk/rocketseat.feedback-widget-web)
