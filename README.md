@@ -10,11 +10,6 @@
 - Tailwind CSS : Framework css
 - Headless UI : Componentes de UI sem estilos e completamente acessíveis (acessibilidade)
 
-## ➕ O que fiz além ✨
-
-- Tema Light (Claro) seguindo o layout do Figma
-- Componente Header com botões para mudar o tema light (claro) ou dark (escuro)
-
 ## 🗃️ Guia 📚
 
 - Criando o projeto com Vite:
@@ -85,6 +80,18 @@
 
         nas estilizações adicionar a variante dark exemplo:
         <div class="bg-white dark:bg-zinc-900">...</div>
+
+## ➕ O que fiz além ✨
+
+- Tema Light (Claro) seguindo o layout do Figma
+
+- Componente Header com botões para mudar o tema light (claro) ou dark (escuro)
+
+## Ideias para milha extra
+
+- Dashboard de feedbacks
+
+- Validação de campos e erros
 
 ## 🖼️ Imagens do projeto 👀
 
