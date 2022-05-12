@@ -3,7 +3,7 @@ import { ModeButton } from './ModeButton';
 
 export function Header() {
   return (
-    <div className="bg-zinc-100 dark:bg-zinc-800 flex justify-between items-center p-4">
+    <div className="bg-zinc-100 dark:bg-zinc-800 flex justify-between items-center p-4 shadow-md dark:shadow-md dark:shadow-brand-700">
       <h1 className="font-bold text-xl">Feedback Widget</h1>
       <div className="flex font-bold">
         <Link
