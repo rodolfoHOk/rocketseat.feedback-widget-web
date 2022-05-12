@@ -87,6 +87,10 @@
 
 - Componente Header com botões para mudar o tema light (claro) ou dark (escuro)
 
+- Página Home fake
+
+- Página de login
+
 ## Ideias para milha extra
 
 - Dashboard de feedbacks
