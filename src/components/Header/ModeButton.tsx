@@ -9,8 +9,8 @@ export function ModeButton() {
       <button
         className={
           isDarkTheme
-            ? 'w-10 h-9 bg-zinc-900 flex justify-center items-center rounded-l-xl hover:bg-brand-500 hover:text-white transition-colors'
-            : 'w-10 h-9 bg-brand-300 text-white flex justify-center items-center rounded-l-xl hover:bg-brand-500 hover:text-white transition-colors'
+            ? 'w-10 h-9 bg-zinc-900 flex justify-center items-center rounded-l-xl hover:bg-brand-500 hover:text-white transition-colors duration-300'
+            : 'w-10 h-9 bg-brand-300 text-white flex justify-center items-center rounded-l-xl hover:bg-brand-500 hover:text-white transition-colors duration-300'
         }
         onClick={() => setTheme(ThemeName.LIGHT)}
       >
@@ -19,8 +19,8 @@ export function ModeButton() {
       <button
         className={
           isDarkTheme
-            ? 'w-10 h-9 bg-brand-300 text-white flex justify-center items-center rounded-r-xl hover:bg-brand-500 hover:text-white transition-colors'
-            : 'w-10 h-9 bg-white flex justify-center items-center rounded-r-xl hover:bg-brand-500 hover:text-white transition-colors'
+            ? 'w-10 h-9 bg-brand-300 text-white flex justify-center items-center rounded-r-xl hover:bg-brand-500 hover:text-white transition-colors duration-300'
+            : 'w-10 h-9 bg-white flex justify-center items-center rounded-r-xl hover:bg-brand-500 hover:text-white transition-colors duration-300'
         }
         onClick={() => setTheme(ThemeName.DARK)}
       >
