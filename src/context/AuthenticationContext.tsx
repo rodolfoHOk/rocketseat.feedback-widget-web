@@ -117,14 +117,25 @@ export function AuthenticationProvider({
     setUser(null);
   }
 
+  async function getUserInfos() {
+    api
+      .get<User>('/auth/user-infos')
+      .then((response) => {
+        setUser(response.data);
+      })
+      .catch(() => {
+        signOut();
+      });
+  }
+
   useEffect(() => {
     const token = localStorage.getItem('@feedget:token');
 
     if (token) {
       api.defaults.headers.common.authorization = `Bearer ${token}`;
-    }
 
-    // todo: fetch user -> need back-end get user by token payload user id
+      getUserInfos();
+    }
   }, []);
 
   useEffect(() => {
