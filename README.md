@@ -87,9 +87,15 @@
 
 - Componente Header com botões para mudar o tema light (claro) ou dark (escuro)
 
-- Página Home fake
+- Contexto de tema claro e escuro
+
+- Página home fake
 
 - Página de login
+
+- Contexto de autenticação
+
+- Botão de usuário Logado
 
 ## Ideias para milha extra
 

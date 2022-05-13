@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { LoginArea } from './LoginArea';
 import { ModeButton } from './ModeButton';
 
 export function Header() {
@@ -25,8 +26,9 @@ export function Header() {
           Login
         </Link>
       </div>
-      <div>
+      <div className="flex items-center gap-2">
         <ModeButton />
+        <LoginArea />
       </div>
     </div>
   );
