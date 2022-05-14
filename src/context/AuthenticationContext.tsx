@@ -104,7 +104,7 @@ export function AuthenticationProvider({
       localStorage.setItem('@feedget:token', token);
       api.defaults.headers.common.authorization = `Bearer ${token}`;
       setUser(user);
-      navigate('/feedbacks');
+      navigate('/');
       setIsLoggingIn(false);
     } else {
       console.log('Error in Logging In');

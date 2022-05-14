@@ -95,11 +95,11 @@
 
 - Contexto de autenticação
 
-- Botão de usuário Logado
+- Menu de área de login
+
+- Página listagem de feedbacks
 
 ## Ideias para milha extra
-
-- Dashboard de feedbacks
 
 - Validação de campos e erros
 
