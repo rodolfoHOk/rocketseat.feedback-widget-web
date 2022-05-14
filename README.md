@@ -99,6 +99,10 @@
 
 - Página listagem de feedbacks
 
+- #### próximos passos: implementar paginação da lista de feedbacks
+
+- #### próximos passos: implementar header responsivo
+
 ## Ideias para milha extra
 
 - Validação de campos e erros

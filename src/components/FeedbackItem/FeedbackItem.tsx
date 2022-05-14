@@ -1,4 +1,6 @@
+import { Popover, Transition } from '@headlessui/react';
 import { XSquare } from 'phosphor-react';
+import { Fragment } from 'react';
 import { Feedback } from '../../pages/Feedbacks';
 import { feedbackTypes } from '../FeedbackWidget/WidgetForm';
 
@@ -18,21 +20,41 @@ export function FeedbackItem({ feedback }: FeedbackItemProps) {
         <span className="font-bold">{feedbackTypes[feedback.type].title}</span>
       </div>
       <div className="flex gap-2 md:gap-4 flex-row-reverse md:flex-col p-4">
-        <button
-          className="flex justify-center h-[180px] min-w-[200px] max-w-[200px] md:max-w-none bg-black rounded-md border-4 disabled:border-0 border-black hover:border-brand-500 dark:hover:border-brand-500 transition-colors duration-300"
-          disabled={!feedback.screenshot}
-        >
-          {feedback.screenshot ? (
-            <img className="rounded-md" src={feedback.screenshot} />
-          ) : (
-            <XSquare
-              size={64}
-              weight="thin"
-              className="my-auto text-zinc-500"
-            />
-          )}
-        </button>
+        <Popover className="flex">
+          <Popover.Button
+            className="flex justify-center h-[180px] min-w-[200px] max-w-[200px] md:max-w-none md:w-full bg-black rounded-md border-4 disabled:border-0 border-black hover:border-brand-500 dark:hover:border-brand-500 transition-colors duration-300"
+            disabled={!feedback.screenshot}
+          >
+            {feedback.screenshot ? (
+              <img className="rounded-md" src={feedback.screenshot} />
+            ) : (
+              <XSquare
+                size={64}
+                weight="thin"
+                className="my-auto text-zinc-500"
+              />
+            )}
+          </Popover.Button>
 
+          <Transition
+            as={Fragment}
+            enter="transition ease-out duration-150"
+            enterFrom="transform opacity-0 scale-75"
+            enterTo="transform opacity-100 scale-100"
+            leave="transition ease-in duration-75"
+            leaveFrom="transform opacity-100 scale-100"
+            leaveTo="transform opacity-100 scale-75"
+          >
+            <Popover.Panel className="fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-brand-700 dark:bg-brand-700 p-2 rounded-xl">
+              <div>
+                <img
+                  className="max-h-[90vh] max-w-[90vw]"
+                  src={feedback.screenshot}
+                />
+              </div>
+            </Popover.Panel>
+          </Transition>
+        </Popover>
         <div className="flex flex-col w-full h-[180px] overflow-auto bg-zinc-200 dark:bg-zinc-900 rounded-md p-2">
           <span className="font-bold text-sm text-brand-500">Comentário</span>
           <span className="md:text-sm">{feedback.comment}</span>
