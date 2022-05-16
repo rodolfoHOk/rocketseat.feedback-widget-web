@@ -85,27 +85,15 @@
 
 - Tema Light (Claro) seguindo o layout do Figma
 
-- Componente Header com botões para mudar o tema light (claro) ou dark (escuro)
+- Contexto de tema claro e escuro com botões para mudar entre eles no cabeçalho
 
-- Contexto de tema claro e escuro
+- Contexto de autenticação, página de login e botão/menu de área de login no cabeçalho
 
-- Página home fake
+- Página listagem de feedbacks com paginação
 
-- Página de login
+- Header responsivo com menu hambúrguer em mobile
 
-- Contexto de autenticação
-
-- Menu de área de login
-
-- Página listagem de feedbacks
-
-- #### próximos passos: implementar paginação da lista de feedbacks
-
-- #### próximos passos: implementar header responsivo
-
-## Ideias para milha extra
-
-- Validação de campos e erros
+- #### Próximo passo: Validação de campos e erros
 
 ## 🖼️ Imagens do projeto 👀
 
