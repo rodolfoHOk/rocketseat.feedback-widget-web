@@ -5,6 +5,7 @@ import { CloseButton } from '../../CloseButton';
 import { ScreenShotButton } from '../ScreenshotButton';
 import { api } from '../../../../lib/api';
 import { Loading } from '../../Loading';
+import { toast } from 'react-toastify';
 
 interface FeedbackContentStepProps {
   feedbackType: FeedbackType;
@@ -25,6 +26,21 @@ export function FeedbackContentStep({
 
   async function handleSubmitFeedback(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+
+    if (!comment) {
+      toast.error('Escreva algo para poder enviar o feedback', {
+        position: 'top-right',
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'colored',
+      });
+
+      return;
+    }
 
     setIsSendingFeedback(true);
 

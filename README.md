@@ -93,7 +93,7 @@
 
 - Header responsivo com menu hambúrguer em mobile
 
-- #### Próximo passo: Validação de campos e erros
+- Validação de campos e erros com mensagens/notificações de erros em tela
 
 ## 🖼️ Imagens do projeto 👀
 

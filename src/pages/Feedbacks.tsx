@@ -1,9 +1,13 @@
 import { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import { FeedbackItem } from '../components/FeedbackItem/FeedbackItem';
 import { FeedbackType } from '../components/FeedbackWidget/WidgetForm';
+import { Unauthorized } from '../components/Unauthorized/Unauthorized';
 import { useAuth } from '../context/AuthenticationContext';
+import { ApiProblemResponse } from '../errors/ApiProblemResponse';
+import { ErrorTypes } from '../errors/ErrorTypes';
 import { api } from '../lib/api';
 
 export interface Feedback {
@@ -21,11 +25,10 @@ interface PagedFeedbacks {
 }
 
 export function Feedbacks() {
-  const navigate = useNavigate();
   const { user } = useAuth();
 
   if (!user) {
-    navigate('/');
+    return <Unauthorized />;
   }
 
   const [pagedFeedbacks, setPagedFeedbacks] = useState<PagedFeedbacks | null>(
@@ -34,13 +37,42 @@ export function Feedbacks() {
   const [page, setPage] = useState(1);
   const [size, setSize] = useState(9);
 
+  function toastError(message: string) {
+    toast.error(message, {
+      position: 'top-right',
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'colored',
+      toastId: 'authErrorToast',
+    });
+  }
+
   async function getFeedbacks(page: number, size: number) {
     api
       .get<PagedFeedbacks>(`/feedbacks?page=${page}&size=${size}`)
       .then((response) => {
         setPagedFeedbacks(response.data);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        const { type, detail, field } = err.response.data as ApiProblemResponse;
+        if (type === ErrorTypes.AUTHENTICATION_ERROR) {
+          if (detail === 'Authorization token expired') {
+            toastError('Token de autorização expirado. Efetue novo login');
+          } else {
+            toastError('Token de autorização não informado ou inválido');
+          }
+        } else if (type === ErrorTypes.FORBIDDEN_ERROR) {
+          toastError('Usuário não tem permissão para efetuar esta operação');
+        } else if (type === ErrorTypes.INVALID_DATA) {
+          toastError(`Dado fornecido inválido. Campo: ${field}`);
+        } else if (type === ErrorTypes.INTERNAL_SERVER_ERROR) {
+          toastError('Algo deu errado');
+        }
+      });
   }
 
   function partitionArray(array: any[], fragmentSize: number): any[][] {
@@ -73,7 +105,7 @@ export function Feedbacks() {
               className="flex flex-col md:flex-row gap-4 justify-around w-full"
             >
               {row.map((feedback) => (
-                <FeedbackItem feedback={feedback} />
+                <FeedbackItem key={feedback.id} feedback={feedback} />
               ))}
             </div>
           ))}

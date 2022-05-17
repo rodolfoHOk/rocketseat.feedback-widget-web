@@ -7,8 +7,11 @@ import {
 } from 'react';
 import { useNavigate } from 'react-router-dom';
 import queryString from 'query-string';
+import { toast } from 'react-toastify';
 
 import { api } from '../lib/api';
+import { ApiProblemResponse } from '../errors/ApiProblemResponse';
+import { ErrorTypes } from '../errors/ErrorTypes';
 
 export interface User {
   id: string;
@@ -97,23 +100,40 @@ export function AuthenticationProvider({
   async function signInApi(url: string, code: string) {
     setIsLoggingIn(true);
 
-    const response = await api.post<ApiAuthenticationResponse>(url, { code });
-    const { token, user } = response.data;
-
-    if (response.status === 200) {
-      localStorage.setItem('@feedget:token', token);
-      api.defaults.headers.common.authorization = `Bearer ${token}`;
-      setUser(user);
-      navigate('/');
-      setIsLoggingIn(false);
-    } else {
-      console.log('Error in Logging In');
-      setIsLoggingIn(false);
-    }
+    await api
+      .post<ApiAuthenticationResponse>(url, {
+        code,
+      })
+      .then((response) => {
+        const { token, user } = response.data;
+        localStorage.setItem('@feedget:token', token);
+        api.defaults.headers.common.authorization = `Bearer ${token}`;
+        setUser(user);
+        navigate('/');
+      })
+      .catch((err) => {
+        const { type } = err.response.data as ApiProblemResponse;
+        if (type === ErrorTypes.AUTHENTICATION_ERROR) {
+          toast.error('Erro ao tentar autenticar', {
+            position: 'top-right',
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'colored',
+            toastId: 'authErrorToast',
+          });
+          navigate('/login');
+        }
+      })
+      .finally(() => setIsLoggingIn(false));
   }
 
   function signOut() {
     localStorage.removeItem('@feedget:token');
+    api.defaults.headers.common.authorization = '';
     setUser(null);
   }
 
