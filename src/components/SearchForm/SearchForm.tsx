@@ -3,18 +3,13 @@ import { CaretDown, Check } from 'phosphor-react';
 import { Fragment } from 'react';
 import { FeedbackStatus } from '../../pages/Feedbacks';
 
-interface SearchFormProps {
-  selected: FeedbackStatus | undefined;
-  setSelected: (value: FeedbackStatus | undefined) => void;
-}
-
-export interface FeedbackStatusType {
+interface FeedbackStatusType {
   id: number;
   title: string;
   value: string | undefined;
 }
 
-export const FeedbackStatusArray: FeedbackStatusType[] = [
+const FeedbackStatusArray: FeedbackStatusType[] = [
   {
     id: 0,
     title: 'Todos',
@@ -41,6 +36,11 @@ export const FeedbackStatusArray: FeedbackStatusType[] = [
     value: 'RESOLVED',
   },
 ];
+
+interface SearchFormProps {
+  selected: FeedbackStatus | undefined;
+  setSelected: (value: FeedbackStatus | undefined) => void;
+}
 
 export function SearchForm({ selected, setSelected }: SearchFormProps) {
   let selectedTitle = 'Todos';

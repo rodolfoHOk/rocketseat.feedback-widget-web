@@ -7,7 +7,6 @@ import {
   XSquare,
 } from 'phosphor-react';
 import { Fragment } from 'react';
-import { ApiProblemResponse } from '../../errors/ApiProblemResponse';
 import { Feedback, FeedbackStatus } from '../../pages/Feedbacks';
 import { feedbackTypes } from '../FeedbackWidget/WidgetForm';
 import { StatusButton } from './StatusButton';
