@@ -9,8 +9,21 @@
 - React : Biblioteca criação de interfaces
 - Tailwind CSS : Framework css
 - Headless UI : Componentes de UI sem estilos e completamente acessíveis (acessibilidade)
+- Autenticação OAuth2 : Login social com Github ou Google ou Facebook
+- React Context API : Autenticação e Temas
+- Responsividade
 
-## 🗃️ Guia 📚
+### 📚 bibliotecas adicionais 🗃️
+
+- axios : Cliente HTTP baseado em promessa para o navegador e node.js
+- html2canvas : Capturas de tela com JavaScript
+- phosphor-react : Uma família de ícones limpa e amigável para React
+- query-string : Utilitário de strings de consulta de URL
+- react-paginate : Um componente ReactJS para criação de paginação
+- react-router-dom : Roteamento declarativo para aplicativos Web React
+- react-toastify : Notificação para React facilitada
+
+## 📃 Guia 📖
 
 - Criando o projeto com Vite:
 
