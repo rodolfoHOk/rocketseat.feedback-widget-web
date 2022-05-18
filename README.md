@@ -105,43 +105,63 @@
 
 Feedback Widget fechado:
 
-<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-01.png" alt="NLW Return Img1" width="450"/>
-
-Feedback Widget com mouse em cima:
-
-<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-02.png" alt="NLW Return Img2" width="450"/>
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/feedget-01.png" alt="NLW Return Img1" width="450"/>
 
 Feedback Widget aberto:
 
-<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-03.png" alt="NLW Return Img3" width="450"/>
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/feedget-02.png" alt="NLW Return Img2" width="450"/>
 
-Feedback Widget ao selecionar Problema:
+Feedback Widget ao selecionar Ideia:
 
-<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-04.png" alt="NLW Return Img4" width="450"/>
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/feedget-03.png" alt="NLW Return Img3" width="450"/>
 
-Feedback Widget Problema com screenshot tirada e com mensagem:
+Feedback Widget aberto tema light:
 
-<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-05.png" alt="NLW Return Img5" width="450"/>
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/feedget-04.png" alt="NLW Return Img4" width="450"/>
 
-Feedback Widget ao enviar Feedback:
+Tela de login social com github ou google ou facebook:
 
-<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-06.png" alt="NLW Return Img6" width="450"/>
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/feedget-05.png" alt="NLW Return Img5" width="450"/>
 
-Feedback Widget com cabeçalho com botões para selecionar tema:
+Mensagem de erro:
 
-<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-07.png" alt="NLW Return Img7" width="450"/>
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/feedget-06.png" alt="NLW Return Img6" width="450"/>
 
-Feedback Widget com tema claro:
+Tela de feedbacks:
 
-<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-08.png" alt="NLW Return Img8" width="450"/>
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/feedget-07.png" alt="NLW Return Img7" width="450"/>
 
-Feedback Widget com tema claro e Ideia selecionada:
+Tela de feedbacks detalhe da paginação:
 
-<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-09.png" alt="NLW Return Img9" width="450"/>
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/feedget-08.png" alt="NLW Return Img8" width="450"/>
 
-Feedback Widget com tema claro ao enviar Feedback:
+Tela de feedbacks com tema light:
 
-<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/rocketseat-feedback-widget-10.png" alt="NLW Return Img10" width="450"/>
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/feedget-09.png" alt="NLW Return Img9" width="450"/>
+
+Responsividade mobile com tema light detalhe menu hambúrguer:
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/feedget-10.png" alt="NLW Return Img10" width="250"/>
+
+Responsividade mobile com tema light menu aberto:
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/feedget-11.png" alt="NLW Return Img11" width="250"/>
+
+Responsividade mobile com tema light tela de feedbacks:
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/feedget-12.png" alt="NLW Return Img12" width="250"/>
+
+Responsividade mobile com tema light tela de feedbacks filtro de busca aberto:
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/feedget-13.png" alt="NLW Return Img13" width="250"/>
+
+Responsividade mobile com tema light tela de login :
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/feedget-14.png" alt="NLW Return Img14" width="250"/>
+
+Responsividade mobile com tema dark widget aberto:
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/feedget-15.png" alt="NLW Return Img15" width="250"/>
 
 ## 🔗 Links úteis ✨
 
