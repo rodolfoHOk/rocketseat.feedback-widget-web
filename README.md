@@ -95,6 +95,12 @@
 
 - Validação de campos e erros com mensagens/notificações de erros em tela
 
+- Adicionado data de criação do feedback na listagem, lista vem em ordem decrescente por data criação
+
+- Marcação de feedback com status: pendente, em análise, rejeitado ou resolvido.
+
+- Filtro por status para listagem de feedbacks
+
 ## 🖼️ Imagens do projeto 👀
 
 Feedback Widget fechado:
